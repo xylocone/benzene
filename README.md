@@ -4,10 +4,30 @@ This is a starter template I have created for a modern C++ application.
 
 ## Dependencies
 
-The following are the dependencies associated with this project:
+The following need to be installed on your system to be able to build the executable:
 
-1. **MSVC Compiler**: The MSVC Compiler, instead of the TDM-gcc compiler, is more suitable for projects that are Windows-specific and use Windows-specific features. Although, for the most part, TDM-gcc too can compiler applications using the Windows API. In order to make this compiler work, however, you need a bunch of environment variables set in the terminal. This can be done automatically by using the _Developer Command Prompt for VS_ or by running a batch script that sets up the required variables.
+1. **gcc**: The famous compiler suite.
 
-2. **CMake**: CMake is a build tool that can build multiple source files in one go.
+2. **CMake**: CMake is a build system generator that can generate `make`, `Ninja` and other build configuration files to build your project.
 
-3. **Conan**: Conan is a package manager for C and C++ projects.
+3. **Ninja**: A popular build tool for C/C++.
+
+4. **vcpkg**: A package manager for C/C++ applications.
+
+## How to build
+
+Install all of the dependencies, and add them to the system path. In addition to that, add the following environment variable(s) to either the system or your terminal:
+
+- _VCPKG_ROOT_: this should point to the top-most directory of your vcpkg installation
+
+After setting up the environment variables, run `./build.bat` to build the project. If you are using Visual Studio Code, you can also run the _Build_ task, which does the same thing in fewer keystrokes.
+
+The resultant executable will be found in the `build` directory.
+
+## Cleanup
+
+Run `./cleanup.bat` to clean the `build` directory. There is also a corresponding Visual Studio Code task.
+
+## License
+
+MIT
