@@ -2,11 +2,11 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build using MSVC",
+      "label": "Build",
       "command": "${workspaceFolder}${/}build.bat",
       "group": {
         "kind": "build",
-        "isDefault": false
+        "isDefault": true
       },
       "presentation": {
         "reveal": "always",
