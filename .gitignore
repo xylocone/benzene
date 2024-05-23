@@ -1,0 +1,11 @@
+# Ignore workspace specific VSCode settings
+.vscode/settings.json
+
+# Ignore the build directory
+build/
+
+# Ignore the environment variables file
+.env
+
+# Ignore CMake User presets
+CMakeUserPresets.json
